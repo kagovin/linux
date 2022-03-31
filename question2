@@ -8,7 +8,7 @@ last check iptable for anything block from connection.
 
 
 *******ANSIBLE*******
-
+create inventory file;
 
 # Redhat servers
 rhel1 ansible_host=srvlinux01.company.com ansible_connection=ssh ansible_user=root ansible_ssh_pass=Password
@@ -26,6 +26,23 @@ rhel2
 ctos01
 ctos02
 
-[all_servers:children]
+[all_nodes:children]
 redhat_servers
 centos_servers
+
+************************************************************
+create YAML file (install.yaml);
+
+-
+  name: 'Execute a command on all_servers'
+  hosts: all_nodes
+  tasks:
+    -
+      name: 'Execute a command'
+      command: yum install ***
+  
+
+
+
+
+
