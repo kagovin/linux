@@ -1,0 +1,10 @@
+I will compile the list of servers by separate applications (database, middleware & upstream) and server type (prod & non-prod).
+Also will breakdown the server list according to planned date. Then,
+Will inform the respective server owners about the criticality of this issue and get server downtime from them.
+Once donwtime is provided by server owners then I will submit change ticket accordingly base on the scheduled date. And,
+Get the change ticket fully approved before the planned start date.
+Snapshot will be taken before the change planned start date.
+I will start execute the plan provided by vendor to fix the vulnerability.
+Once completed will inform the respective server owner to verify and provide the AVP.
+Once AVP provided, will proceed to close the change ticket.
+After 2-3 working days, will start to remove the snapshots.
