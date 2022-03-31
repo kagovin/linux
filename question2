@@ -1,0 +1,19 @@
+# Redhat servers
+rhel1 ansible_host=srvlinux01.company.com ansible_connection=ssh ansible_user=root ansible_ssh_pass=Password
+rhel2 ansible_host=srvlinux02.company.com ansible_connection=ssh ansible_user=root ansible_ssh_pass=Password
+
+# CentOS servers
+ctos1 ansible_host=srvctos01.company.com ansible_connection=ssh ansible_user=root ansible_ssh_pass=Password
+ctos2 ansible_host=srvctos02.company.com ansible_connection=ssh ansible_user=root ansible_ssh_pass=Password
+
+[redhat_server]
+rhel1
+rhel2
+
+[centos_servers]
+ctos01
+ctos02
+
+[all_servers:children]
+redhat_servers
+centos_servers
