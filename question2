@@ -39,7 +39,7 @@ create YAML file (install.yaml);
   tasks:
     -
       name: 'Execute a command'
-      command: yum install ***
+      command: wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.17.2.tar.xz
   
 
 
