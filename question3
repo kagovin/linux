@@ -1,1 +1,8 @@
+If its a Red Hat machine has high CPU usage, Need to run Top command to find out the CPU usage.
+Find out who is monopolizing or eating the CPU and engaged the right team (Could be Application/ DB or backup) engage the respective team to reslove this issue.
+
+If this issues persist,Use the nice command to manually lower the task's priority. Use the cpulimit command to repeatedly pause the process so that it doesn't exceed 
+a certain limit. Use Linux's built-in control groups, a mechanism which tells the scheduler to limit the amount of resources available to the process.
+
+If the issue is not resolving further, Then we can engaged with Redhat for solutions as well.
 
