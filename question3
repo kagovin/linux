@@ -6,3 +6,6 @@ a certain limit. Use Linux's built-in control groups, a mechanism which tells th
 
 If the issue is not resolving further, Then we can engaged with Redhat for solutions as well.
 
+Beside this, we can also tune the I/O performance.
+Test the disk speed and enable direct memory access (DMA).
+DMA is not enabled by default, the transfer rate might have improved considerably.
